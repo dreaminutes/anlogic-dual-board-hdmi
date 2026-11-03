@@ -1,0 +1,69 @@
+analyze -file source_inputs/rtl/common/db_packet_tx.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/rtl/common/db_fps_packet_rx.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/rtl/common/db_source_sync_tx.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/rtl/common/db_source_sync_rx.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/rtl/bringup/filtered_experiment/db_link25_input_filter.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/main/rtl/db_av2_record_router.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/main/rtl/db_command_cdc.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/main/rtl/db_fps_row_mailbox_cdc.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/main/rtl/db_pipelined_row_pixel_writer.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/main/rtl/db_full_frame_guard.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/main/rtl/db_library_receive_engine.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/main/rtl/db_library_sampled_engine.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/main/rtl/db_noload_memory_video.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/main/rtl/db_noload_main_board.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/main/rtl/db_tune_main_sdram.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/baseline/single_board/fpga/starter/photo_read_fifo.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/secondary/rtl/db_mem50_pll.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/baseline/single_board/fpga/starter/reset_sync_stable.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/baseline/single_board/fpga/starter/media_power_reset.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/baseline/single_board/fpga/extensions/animated_quality/animated_memory_arbiter.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/baseline/single_board/fpga/extensions/tv_startup_diag_v14/cached_video_reader.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/main/rtl/db_cable10_video_pll.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/baseline/single_board/fpga/user_source/hdl_source/hdmi_phy_warpper.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/baseline/single_board/fpga/user_source/hdl_source/lane_lvds_10_1.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/baseline/single_board/fpga/user_source/hdl_source/hdmi1.4b_transmitter_core/hdmi_1_4b_transmitter_core_wrapper.enc.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/baseline/single_board/fpga/user_source/hdl_source/video_rgb_to_axis_640x480.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/baseline/single_board/fpga/user_source/hdl_source/include/global_def.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/main/rtl/db_full_media_frame_guard.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/main/rtl/db_tune_write_retirement.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/main/rtl/db_cable10_capture_byte_fifo.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/main/rtl/db_fast24_capture_bridge.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/rtl/common/db_av_start.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/rtl/common/db_av_pcm_fifo.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/main/rtl/db_av_pcm_playback.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/main/rtl/db_av_visualizer.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/main/rtl/db_noload_panel.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/main/rtl/db_noload_osd.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/baseline/single_board/fpga/extensions/tv_startup_diag_v14/tv_settings_controls_v2.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/rtl/common/db_full_command.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/rtl/common/db_full_word_fifo.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/main/rtl/db_library_blob_router.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/main/rtl/db_fast24_bmp_sink.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/main/rtl/db_library_transition_control.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/baseline/single_board/fpga/extensions/tv_startup_diag_v14/photo_frame_compositor.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/secondary/rtl/db_opt_bmp_producer.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/secondary/rtl/db_opt_bmp_scaler.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/baseline/single_board/fpga/extensions/animated_quality/bmp_stream_decoder.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/baseline/single_board/fpga/extensions/large_bmp_v6/bmp_stream_divider.v -include_dir source_inputs/rtl/common -include_dir source_inputs/baseline/single_board/fpga/user_source/hdl_source/include
+analyze -file source_inputs/main/rtl/db_rate_meter.v
+analyze -file source_inputs/main/rtl/db_sw5_controls.v -include_dir source_inputs/rtl/common
+analyze -file source_inputs/main/rtl/db_star_game.v -include_dir source_inputs/rtl/common
+analyze -file source_inputs/main/rtl/db_star_renderer.v -include_dir source_inputs/rtl/common
+analyze -file source_inputs/main/rtl/db_library_blob_sink.v -include_dir source_inputs/rtl/common
+analyze -file source_inputs/main/rtl/db_library_audio_reader.v -include_dir source_inputs/rtl/common
+analyze -file source_inputs/main/rtl/db_library_pcm_select.v -include_dir source_inputs/rtl/common
+analyze -file source_inputs/main/rtl/db_library_engine_mux.v -include_dir source_inputs/rtl/common
+analyze -file source_inputs/secondary/rtl/db_crc32_word.v -include_dir source_inputs/rtl/common
+analyze -file source_inputs/main/rtl/db_neon_reference_renderer.v -include_dir source_inputs/rtl/common -include_dir source_inputs/main/rtl
+analyze -file source_inputs/main/rtl/db_neon_spectrum_cache.v -include_dir source_inputs/rtl/common -include_dir source_inputs/main/rtl
+analyze -file source_inputs/main/rtl/db_neon_reference_visualizer.v -include_dir source_inputs/rtl/common -include_dir source_inputs/main/rtl
+analyze -file source_inputs/main/rtl/db_neon_reference_osd.v -include_dir source_inputs/rtl/common -include_dir source_inputs/main/rtl
+analyze -file source_inputs/main/rtl/db_neon_reference_panel.v -include_dir source_inputs/rtl/common -include_dir source_inputs/main/rtl
+analyze -file source_inputs/main/rtl/db_neon_reference_main_board.v -include_dir source_inputs/rtl/common -include_dir source_inputs/main/rtl
+analyze -file source_inputs/main/rtl/db_info_bmp_sink.v -include_dir source_inputs/rtl/common -include_dir source_inputs/main/rtl
+analyze -file source_inputs/main/rtl/db_info_blob_sink.v -include_dir source_inputs/rtl/common -include_dir source_inputs/main/rtl
+analyze -file source_inputs/main/rtl/db_info_receive_engine.v -include_dir source_inputs/rtl/common -include_dir source_inputs/main/rtl
+analyze -file source_inputs/main/rtl/db_info_sampled_engine.v -include_dir source_inputs/rtl/common -include_dir source_inputs/main/rtl
+analyze -file source_inputs/main/rtl/db_info_memory_video.v -include_dir source_inputs/rtl/common -include_dir source_inputs/main/rtl
+analyze -file source_inputs/main/rtl/db_info_controls.v -include_dir source_inputs/rtl/common -include_dir source_inputs/main/rtl
