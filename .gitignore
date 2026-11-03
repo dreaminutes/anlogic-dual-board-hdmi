@@ -1,0 +1,28 @@
+# FPGA generated results
+**/build/
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local media inputs and generated output; keep empty folder placeholders
+/media_tools/input/**
+!/media_tools/input/**/
+!/media_tools/input/**/.gitkeep
+/media_tools/output/**
+!/media_tools/output/.gitkeep
+
+# Portable executable environments are distributed separately, not as source
+/media_tools/runtime/*
+!/media_tools/runtime/licenses/
+!/media_tools/runtime/第三方组件说明.txt
+
+# Editor and operating-system local files
+.vs/
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+*.tmp
