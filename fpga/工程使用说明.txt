@@ -1,0 +1,40 @@
+基于安路FPGA的双板协同HDMI多媒体展示系统
+FPGA工程使用说明
+
+一、目录和版本
+main_v10：V10主板，顶层 db_neon_reference_main_board。
+secondary_library：配套副板，顶层 db_library_secondary_board。
+两板器件均为 EG4S20BG256。source_inputs 为最终发布工程的冻结源码；没有混入后续候选版本。
+bit 目录位于本目录的上一级，内含最终主板与配套副板 BIT。
+
+二、软件环境
+使用 TangDynasty TD 6.2.1 Engineer，内部版本 6.2.168.116。
+请将全部源码解压到较短的纯英文路径，例如 D:\FPGA_Media。TD不随源码包分发。
+在 PowerShell 中设置工具路径，示例：
+$env:TD_EXE='D:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\bin\td_commands_prompt.exe'
+也可以把该bin目录加入PATH，或在build.ps1后添加 -TdExe '实际工具完整路径'。
+
+三、查看和构建
+可用 TD 打开各子目录内的 .al 工程浏览源文件、引脚及时序约束。
+正式复现采用提供的 Tcl/PowerShell 入口；其中保存了V10使用的综合、布局及布线参数。
+在所需板卡目录打开命令行：
+build.cmd -Stage Validate    仅分析与展开，检查文件引用和顶层
+build.cmd -Stage Synthesis   综合，生成build/native_gate.db
+build.cmd -Stage Physical    从综合结果布局布线，生成build/native_pr.db
+build.cmd -Stage Bit         正建立/保持裕量及零总负裕量检查后生成BIT
+build.cmd -Stage All         按综合、布局布线、BIT顺序执行
+无参数时只执行Validate。输出和日志均位于对应板卡的build目录。
+物理实现沿用原种子与努力度参数；主板还保留局部布局约束及布局后物理优化。
+重新构建后，检查build中的时序、覆盖率和布线DRC结果；reference_results保存原发布结果供核对。
+GUI默认策略不包含全部自定义物理优化步骤，因此不要用默认一键运行替代这里的构建入口。
+
+四、源码和依赖
+源码按真实编译清单组织，所需头文件、原厂HDMI加密RTL、PLL封装、字模和查找表均包含。
+ROM初始化常量已在Verilog内定义，无外部mem/hex文件依赖。
+source_files.txt列出编译顺序。pins.adc和clocks.sdc为发布版约束；副板另有placement.adc。
+工程只依赖已安装TD的器件数据库与原语库，不引用开发电脑上的工程绝对路径。
+
+五、下载
+使用上一级bit目录中的配套主板、副板BIT进行上板运行。
+FPGA工具中的下载接口、器件及Flash容量按报告与实际板卡选择。
+本构建脚本仅生成文件，不连接下载器、不写Flash、不操作TF卡。
