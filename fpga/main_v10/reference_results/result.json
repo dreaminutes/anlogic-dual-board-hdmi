@@ -1,0 +1,22 @@
+{
+  "board": "main_v10",
+  "top": "db_neon_reference_main_board",
+  "device": "EG4S20BG256",
+  "source_build": "sw4_reference_main_v10_v3_seed74_opt6",
+  "resources": {
+    "lut": 17736,
+    "reg": 11362,
+    "bram": 64,
+    "bram32k": 15,
+    "dsp": 28,
+    "pad": 51,
+    "pll": 2
+  },
+  "timing_ns": {
+    "SWNS": 0.135,
+    "STNS": 0.0,
+    "HWNS": 0.022,
+    "HTNS": 0.0
+  },
+  "note": "原V10发布时的物理结果；重新构建的实际结果见build目录。"
+}

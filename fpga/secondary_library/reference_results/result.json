@@ -1,0 +1,22 @@
+{
+  "board": "secondary_library",
+  "top": "db_library_secondary_board",
+  "device": "EG4S20BG256",
+  "source_build": "library_secondary_v1",
+  "resources": {
+    "lut": 17125,
+    "reg": 8473,
+    "bram": 41,
+    "bram32k": 0,
+    "dsp": 13,
+    "pad": 36,
+    "pll": 2
+  },
+  "timing_ns": {
+    "SWNS": 0.149,
+    "STNS": 0.0,
+    "HWNS": 0.024,
+    "HTNS": 0.0
+  },
+  "note": "原V10发布时的物理结果；重新构建的实际结果见build目录。"
+}

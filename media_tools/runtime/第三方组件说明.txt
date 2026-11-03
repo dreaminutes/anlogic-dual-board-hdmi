@@ -1,0 +1,21 @@
+便携素材转换运行环境
+
+Python 3.12.14，Windows x64
+本目录保留Python解释器、标准库及其原始许可证。
+源码及项目：https://www.python.org/ https://github.com/python/cpython/tree/3.12
+许可证：licenses/Python_LICENSE.txt 和 python/LICENSE.txt。
+
+Pillow 12.3.0
+用于BMP、GIF及图片属性处理，保留原发行包许可证及第三方通知。
+项目及源码：https://github.com/python-pillow/Pillow
+许可证：licenses/Pillow_LICENSE.txt。
+
+FFmpeg 7.1 essentials_build（Gyan Windows x64静态构建）
+ffmpeg.exe从本地已使用的imageio-ffmpeg 0.6.0发行包原样复制。
+本构建启用GPL和version3；许可证为 licenses/FFmpeg_COPYING.GPLv3.txt。
+FFmpeg源码：https://ffmpeg.org/releases/ffmpeg-7.1.tar.xz
+对应源码标签：https://github.com/FFmpeg/FFmpeg/tree/n7.1
+构建发布者、编译信息与依赖库来源：https://www.gyan.dev/ffmpeg/builds/
+imageio-ffmpeg发布源码：https://github.com/imageio/imageio-ffmpeg/tree/v0.6.0
+运行 ffmpeg.exe -version 可查看全部编译选项及所链接的外部库。
+这些第三方工具为独立程序/库，项目转换脚本通过命令行或公开接口调用。

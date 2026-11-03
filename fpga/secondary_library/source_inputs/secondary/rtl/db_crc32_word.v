@@ -1,0 +1,36 @@
+// Parallel reflected CRC32 for four little-endian bytes. Derived linear basis,not a lookup RAM.
+module db_crc32_word(input wire[31:0]previous,data,output wire[31:0]next_crc);
+ wire[63:0]bundle={data,previous};
+ assign next_crc[0]=^(bundle&64'h04d101df04d101df);
+ assign next_crc[1]=^(bundle&64'h09a203be09a203be);
+ assign next_crc[2]=^(bundle&64'h1344077d1344077d);
+ assign next_crc[3]=^(bundle&64'h26880efa26880efa);
+ assign next_crc[4]=^(bundle&64'h4d101df44d101df4);
+ assign next_crc[5]=^(bundle&64'h9a203be99a203be9);
+ assign next_crc[6]=^(bundle&64'h3091760d3091760d);
+ assign next_crc[7]=^(bundle&64'h6122ec1a6122ec1a);
+ assign next_crc[8]=^(bundle&64'hc245d835c245d835);
+ assign next_crc[9]=^(bundle&64'h805ab1b5805ab1b5);
+ assign next_crc[10]=^(bundle&64'h046462b5046462b5);
+ assign next_crc[11]=^(bundle&64'h08c8c56a08c8c56a);
+ assign next_crc[12]=^(bundle&64'h11918ad411918ad4);
+ assign next_crc[13]=^(bundle&64'h232315a9232315a9);
+ assign next_crc[14]=^(bundle&64'h46462b5346462b53);
+ assign next_crc[15]=^(bundle&64'h8c8c56a68c8c56a6);
+ assign next_crc[16]=^(bundle&64'h1dc9ac921dc9ac92);
+ assign next_crc[17]=^(bundle&64'h3b9359243b935924);
+ assign next_crc[18]=^(bundle&64'h7726b2497726b249);
+ assign next_crc[19]=^(bundle&64'hee4d6493ee4d6493);
+ assign next_crc[20]=^(bundle&64'hd84bc8f9d84bc8f9);
+ assign next_crc[21]=^(bundle&64'hb446902db446902d);
+ assign next_crc[22]=^(bundle&64'h6c5c21846c5c2184);
+ assign next_crc[23]=^(bundle&64'hd8b84309d8b84309);
+ assign next_crc[24]=^(bundle&64'hb5a187ccb5a187cc);
+ assign next_crc[25]=^(bundle&64'h6f920e466f920e46);
+ assign next_crc[26]=^(bundle&64'hdf241c8cdf241c8c);
+ assign next_crc[27]=^(bundle&64'hba9938c7ba9938c7);
+ assign next_crc[28]=^(bundle&64'h71e3705171e37051);
+ assign next_crc[29]=^(bundle&64'he3c6e0a3e3c6e0a3);
+ assign next_crc[30]=^(bundle&64'hc35cc098c35cc098);
+ assign next_crc[31]=^(bundle&64'h826880ef826880ef);
+endmodule

@@ -1,0 +1,36 @@
+set_pin_assignment {clk} {LOCATION = R7; IOSTANDARD = LVCMOS33;}
+set_pin_assignment {sw0} {LOCATION = A9; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP;}
+set_pin_assignment {link_data[0]} {LOCATION = L16; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 4; PULLTYPE = NONE;}
+set_pin_assignment {link_data[1]} {LOCATION = P14; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 4; PULLTYPE = NONE;}
+set_pin_assignment {reserved[0]} {LOCATION = M15; IOSTANDARD = LVCMOS33; PULLTYPE = PULLDOWN;}
+set_pin_assignment {link_data[2]} {LOCATION = M14; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 4; PULLTYPE = NONE;}
+set_pin_assignment {link_data[3]} {LOCATION = M13; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 4; PULLTYPE = NONE;}
+set_pin_assignment {link_data[4]} {LOCATION = L13; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 4; PULLTYPE = NONE;}
+set_pin_assignment {link_data[5]} {LOCATION = K11; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 4; PULLTYPE = NONE;}
+set_pin_assignment {forward_clk} {LOCATION = K12; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 4; PULLTYPE = NONE; PACKREG = OFF;}
+set_pin_assignment {link_data[6]} {LOCATION = L14; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 4; PULLTYPE = NONE;}
+set_pin_assignment {link_data[7]} {LOCATION = J12; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 4; PULLTYPE = NONE;}
+set_pin_assignment {link_valid} {LOCATION = J13; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 4; PULLTYPE = NONE;}
+set_pin_assignment {reserved[1]} {LOCATION = K14; IOSTANDARD = LVCMOS33; PULLTYPE = PULLDOWN;}
+set_pin_assignment {credit_in} {LOCATION = J16; IOSTANDARD = LVCMOS33; PULLTYPE = PULLDOWN;}
+set_pin_assignment {command_in} {LOCATION = J14; IOSTANDARD = LVCMOS33; PULLTYPE = PULLDOWN;}
+set_pin_assignment {reserved[2]} {LOCATION = K16; IOSTANDARD = LVCMOS33; PULLTYPE = PULLDOWN;}
+set_pin_assignment {reserved[3]} {LOCATION = K15; IOSTANDARD = LVCMOS33; PULLTYPE = PULLDOWN;}
+set_pin_assignment {reserved[4]} {LOCATION = G11; IOSTANDARD = LVCMOS33; PULLTYPE = PULLDOWN;}
+set_pin_assignment {reserved[5]} {LOCATION = J11; IOSTANDARD = LVCMOS33; PULLTYPE = PULLDOWN;}
+set_pin_assignment {reserved[6]} {LOCATION = G16; IOSTANDARD = LVCMOS33; PULLTYPE = PULLDOWN;}
+set_pin_assignment {reserved[7]} {LOCATION = H15; IOSTANDARD = LVCMOS33; PULLTYPE = PULLDOWN;}
+set_pin_assignment {led[0]} {LOCATION = B14; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 4; PULLTYPE = NONE;}
+set_pin_assignment {led[1]} {LOCATION = B15; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 4; PULLTYPE = NONE;}
+set_pin_assignment {led[2]} {LOCATION = B16; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 4; PULLTYPE = NONE;}
+set_pin_assignment {led[3]} {LOCATION = C15; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 4; PULLTYPE = NONE;}
+set_pin_assignment {led[4]} {LOCATION = C16; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 4; PULLTYPE = NONE;}
+set_pin_assignment {led[5]} {LOCATION = E13; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 4; PULLTYPE = NONE;}
+set_pin_assignment {led[6]} {LOCATION = E16; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 4; PULLTYPE = NONE;}
+set_pin_assignment {led[7]} {LOCATION = F16; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 4; PULLTYPE = NONE;}
+set_pin_assignment {sd_dat[0]} {LOCATION = D14; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP;}
+set_pin_assignment {sd_dat[1]} {LOCATION = D16; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP;}
+set_pin_assignment {sd_dat[2]} {LOCATION = G14; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP;}
+set_pin_assignment {sd_dat[3]} {LOCATION = F13; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP;}
+set_pin_assignment {sd_cmd} {LOCATION = F14; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = PULLUP;}
+set_pin_assignment {sd_dclk} {LOCATION = F15; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE;}

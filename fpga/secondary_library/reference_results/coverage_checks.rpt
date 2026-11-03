@@ -1,0 +1,673 @@
+Table of Contents
+-----------------
+1. checking no clock(0) (HIGH)
+2. checking clock definition(0) (HIGH)
+3. checking dummy node(4) (HIGH)
+4. checking invalid constraint(0) (HIGH)
+5. checking pll/clock buffer clock constraints(1) (HIGH)
+6. checking combinational loops(0) (HIGH)
+7. checking soft fifo timing exception constraints(0) (HIGH)
+8. checking no path constraints(1) (MEDIUM)
+9. checking shadowed/ignored timing exception constraints(0) (MEDIUM)
+10. checking no input delay(11) (MEDIUM)
+11. checking no output delay(8) (MEDIUM)
+12. checking partial input delay(5) (MEDIUM)
+13. checking partial output delay(0) (MEDIUM)
+14. checking abnormal input delay(1) (MEDIUM)
+
+
+1. checking nets with no clock driven. (HIGH)
+---------------------------------------------
+2. checking clock definition problems. (HIGH)
+---------------------------------------------
+2.1 There are 0 leaf clock pins driven by multiple clocks. (HIGH)
+
+
+2.2 There are 0 clocks created on internal clock network. (HIGH)
+
+
+2.3 There are 0 unexpandable clock sets. (HIGH)
+
+
+2.4 There are 0 local clocks. (HIGH)
+
+
+2.5 There are 0 generated clocks that are not connected to their master clocks. (HIGH)
+
+
+3. checking dummy nodes. (HIGH)
+---------------------------------------------
+There are 4 nodes are dangling. (HIGH)
+
+DummyNode in Model: EG_PHY_LSLICE
+	loader/files/reader/scratch_reg[195]_syn_4.c[0]
+	loader/files/reader/error_reg_syn_37.a[0]
+	loader/files/reader/error_reg_syn_38.a[0]
+	loader/files/reader/error_reg_syn_39.a[0]
+	loader/files/reader/error_reg_syn_37.a[1]
+	loader/files/reader/error_reg_syn_38.a[1]
+	loader/files/reader/error_reg_syn_39.a[1]
+	loader/files/reader/chain_valid_reg_syn_27.d[1]
+	loader/files/reader/sd_sec_read_count_reg[1]_syn_8.d[0]
+	loader/files/reader/chain_valid_reg_syn_19.d[1]
+	loader/files/reader/mux760_syn_69.a[1]
+	loader/files/reader/sectors_per_cluster_reg[3]_syn_4.a[1]
+	loader/files/reader/scratch_reg[195]_syn_4.a[0]
+	cache_port/mux18_syn_512.d[1]
+	cache_port/mux18_syn_451.d[1]
+	file_fifo/wcount_b_n3_syn_4.d[0]
+	queue/dynamic_pool/next_token_reg[10]_syn_4.a[0]
+	loader/files/g_producer/gif/lzw/stack_write_address[11]_syn_4.d[0]
+	loader/files/reader/state_b[4]_syn_358.d[1]
+	loader/files/reader/state_b[4]_syn_336.d[1]
+	loader/files/reader/state_b[4]_syn_328.d[1]
+	loader/files/reader/state_b[4]_syn_330.d[0]
+	loader/files/g_producer/ops/scalar/requested_x[9]_syn_4.d[0]
+	loader/files/g_producer/ops/mux68_syn_257.d[0]
+	loader/backend/count_b1[3]_syn_23.d[1]
+	loader/backend/controller/command/error_code_reg[1]_syn_482.mi[0]
+	loader/backend/controller/command/mux172_syn_469.d[1]
+	loader/backend/controller/command/mux172_syn_469.c[1]
+	loader/backend/pack_low_reg[12]_syn_5.mi[0]
+	loader/backend/pack_low_reg[12]_syn_6.mi[0]
+	loader/backend/pack_low_reg[12]_syn_5.mi[1]
+	loader/backend/pack_low_reg[12]_syn_6.mi[1]
+	loader/backend/controller/command/mux172_syn_469.b[1]
+	loader/backend/controller/status_rx/failed_reg_syn_199.mi[0]
+	loader/files/g_producer/held_asset_reg[24]_syn_4.c[1]
+	loader/files/g_producer/held_asset_reg[24]_syn_4.d[1]
+	queue/dynamic_pool/next_token_reg[10]_syn_4.b[0]
+	loader/files/g_producer/gif/lzw/stack_write_address[11]_syn_4.b[0]
+	loader/files/reader/state_b[4]_syn_358.b[1]
+	loader/files/reader/state_b[4]_syn_336.b[1]
+	loader/files/reader/state_b[4]_syn_328.b[1]
+	loader/files/reader/state_b[4]_syn_330.b[0]
+	loader/files/g_producer/ops/scalar/requested_x[9]_syn_4.b[0]
+	loader/files/g_producer/ops/mux68_syn_257.b[0]
+	loader/files/g_producer/gif/gce_delay_reg[13]_syn_4.c[0]
+	loader/files/g_producer/gif/gce_delay_reg[13]_syn_4.c[1]
+	loader/files/g_producer/gif/gce_delay_reg[13]_syn_4.b[0]
+	loader/files/g_producer/gif/gce_delay_reg[13]_syn_4.b[1]
+	loader/files/reader/error_reg_syn_37.b[1]
+	loader/files/reader/error_reg_syn_38.b[1]
+	loader/files/reader/error_reg_syn_39.b[1]
+	loader/files/reader/chain_valid_reg_syn_27.c[1]
+	loader/files/reader/sd_sec_read_count_reg[1]_syn_8.c[0]
+	loader/files/reader/chain_valid_reg_syn_19.c[1]
+	loader/files/reader/plan_next_lba_r_reg[21]_syn_4.d[1]
+	loader/files/reader/plan_next_lba_r_reg[21]_syn_4.a[1]
+	loader/files/reader/scratch_reg[195]_syn_4.b[1]
+	loader/files/reader/prefetch_active_n_syn_35.b[0]
+	loader/files/reader/mux760_syn_69.b[1]
+	loader/files/reader/sectors_per_cluster_reg[3]_syn_4.b[1]
+	loader/files/reader/scratch_reg[195]_syn_4.b[0]
+	loader/files/reader/scratch_reg[195]_syn_4.d[0]
+	loader/files/reader/scratch_reg[195]_syn_4.d[1]
+	loader/files/reader/prefetch_active_n_syn_35.d[0]
+	loader/files/reader/plan_next_lba_r_reg[21]_syn_4.b[1]
+	loader/files/reader/sd_sec_read_count_reg[0]_syn_14.b[1]
+	loader/files/reader/sd_sec_read_count_reg[0]_syn_14.d[1]
+	loader/files/reader/error_reg_syn_37.d[1]
+	loader/files/reader/error_reg_syn_37.d[0]
+	loader/files/reader/error_reg_syn_38.d[1]
+	loader/files/reader/error_reg_syn_38.d[0]
+	loader/files/reader/error_reg_syn_39.d[1]
+	loader/files/reader/error_reg_syn_39.d[0]
+	loader/files/reader/state_b[4]_syn_396.c[0]
+	loader/files/reader/sectors_per_cluster_reg[3]_syn_4.d[1]
+	loader/files/reader/state_b[4]_syn_396.d[0]
+	loader/files/reader/mux760_syn_69.mi[0]
+	loader/files/reader/state_reg[5]_syn_16.mi[0]
+	loader/files/reader/sectors_per_cluster_reg[3]_syn_4.c[1]
+	loader/files/reader/state_reg[4]_syn_15.mi[0]
+	loader/files/reader/scratch_reg[195]_syn_4.c[1]
+	loader/files/reader/prefetch_active_n_syn_35.c[0]
+	loader/files/reader/plan_next_lba_r_reg[21]_syn_4.c[1]
+	loader/files/reader/mux760_syn_69.d[1]
+	loader/files/reader/sd_sec_read_count_reg[1]_syn_8.mi[0]
+	loader/files/reader/sd_sec_read_count_reg[0]_syn_14.mi[0]
+	queue/dynamic_pool/next_token_reg[10]_syn_4.d[0]
+	loader/files/v_producer/video/record_header_reg[54]_syn_4.d[0]
+	loader/files/v_producer/video/record_header_reg[54]_syn_4.d[1]
+	loader/files/v_producer/video/record_header_reg[54]_syn_4.c[0]
+	loader/files/v_producer/video/record_header_reg[54]_syn_4.c[1]
+	loader/files/v_producer/video/record_header_reg[54]_syn_4.b[0]
+	loader/files/v_producer/video/record_header_reg[54]_syn_4.b[1]
+	loader/files/v_producer/video/writer/mux52_syn_67.c[1]
+	loader/files/v_producer/video/writer/mux52_syn_67.b[1]
+	loader/files/v_producer/video/writer/mux52_syn_67.d[1]
+	loader/files/g_producer/ops/pending_data_reg[31]_syn_4.c[1]
+	loader/files/g_producer/ops/pending_data_reg[31]_syn_4.b[1]
+	loader/files/v_producer/video/writer/mux52_syn_67.a[1]
+	cache_port/data_b1[4]_syn_10.b[0]
+	cache_port/held_descriptor_reg[68]_syn_4.b[0]
+	cache_port/mux18_syn_512.a[1]
+	cache_port/mux18_syn_451.a[1]
+	file_fifo/wcount_b_n3_syn_4.a[0]
+	cache_port/data_b1[4]_syn_10.d[0]
+	cache_port/held_descriptor_reg[68]_syn_4.d[0]
+	cache_port/mux18_syn_512.c[1]
+	cache_port/mux18_syn_451.c[1]
+	file_fifo/wcount_b_n3_syn_4.c[0]
+	cache_port/data_b1[4]_syn_10.c[0]
+	cache_port/mux18_syn_512.b[1]
+	cache_port/held_descriptor_reg[68]_syn_4.c[0]
+	cache_port/mux18_syn_451.b[1]
+	file_fifo/wcount_b_n3_syn_4.b[0]
+	queue/dynamic_pool/token_reg[57]_syn_4.e[0]
+	loader/backend/pack_low_reg[12]_syn_4.e[0]
+	loader/backend/pack_low_reg[15]_syn_4.e[1]
+	loader/backend/pack_low_reg[12]_syn_5.e[0]
+	loader/backend/pack_low_reg[12]_syn_6.e[0]
+	queue/dynamic_pool/token_reg[57]_syn_4.d[0]
+	loader/backend/pack_low_reg[12]_syn_4.d[0]
+	loader/backend/pack_low_reg[15]_syn_4.d[1]
+	loader/backend/pack_low_reg[12]_syn_5.d[0]
+	loader/backend/pack_low_reg[12]_syn_6.d[0]
+	queue/dynamic_pool/token_reg[57]_syn_4.c[0]
+	loader/backend/pack_low_reg[12]_syn_4.c[0]
+	loader/backend/pack_low_reg[15]_syn_4.c[1]
+	loader/backend/pack_low_reg[12]_syn_5.c[0]
+	loader/backend/pack_low_reg[12]_syn_6.c[0]
+	cache_port/data_b1[4]_syn_10.a[0]
+	cache_port/held_descriptor_reg[68]_syn_4.a[0]
+	queue/dynamic_pool/token_reg[57]_syn_4.b[0]
+	loader/backend/pack_low_reg[12]_syn_4.b[0]
+	loader/backend/pack_low_reg[15]_syn_4.b[1]
+	loader/backend/pack_low_reg[12]_syn_5.b[0]
+	loader/backend/pack_low_reg[12]_syn_6.b[0]
+	queue/dynamic_pool/next_token_reg[10]_syn_4.c[0]
+	loader/files/reader/state_b[4]_syn_336.c[1]
+	loader/files/g_producer/gif/lzw/stack_write_address[11]_syn_4.c[0]
+	loader/files/g_producer/ops/mux68_syn_257.c[0]
+	loader/files/g_producer/ops/scalar/requested_x[9]_syn_4.c[0]
+	loader/files/reader/state_b[4]_syn_330.c[0]
+	loader/files/reader/state_b[4]_syn_328.c[1]
+	loader/files/reader/state_b[4]_syn_358.c[1]
+	loader/backend/count_b1[3]_syn_23.c[1]
+	loader/scheduler/count_b[3]_syn_9.mi[0]
+	loader/files/b_producer/index_reg[2]_syn_13.mi[0]
+	loader/files/g_producer/gif/gce_delay_reg[13]_syn_4.d[0]
+	loader/files/g_producer/gif/gce_delay_reg[13]_syn_4.d[1]
+	loader/files/reader/mux760_syn_69.c[1]
+	loader/files/reader/error_reg_syn_37.c[0]
+	loader/files/reader/error_reg_syn_38.c[0]
+	loader/files/reader/error_reg_syn_39.c[0]
+	loader/files/reader/error_reg_syn_37.c[1]
+	loader/files/reader/error_reg_syn_38.c[1]
+	loader/files/reader/error_reg_syn_39.c[1]
+	loader/files/reader/error_reg_syn_37.b[0]
+	loader/files/reader/error_reg_syn_38.b[0]
+	loader/files/reader/error_reg_syn_39.b[0]
+	loader/files/reader/sd_sec_read_count_reg[0]_syn_14.a[1]
+	loader/files/reader/sd_sec_read_count_reg[0]_syn_14.c[1]
+	loader/files/g_producer/ops/pending_data_reg[31]_syn_4.d[1]
+	queue/dynamic_pool/token_reg[57]_syn_4.a[0]
+	loader/backend/pack_low_reg[12]_syn_4.a[0]
+	loader/backend/pack_low_reg[15]_syn_4.a[1]
+	loader/backend/pack_low_reg[12]_syn_5.a[0]
+	loader/backend/pack_low_reg[12]_syn_6.a[0]
+
+DummyNode in Model: EG_PHY_MSLICE
+	loader/files/reader/fat_size_reg[30]_syn_4.c[0]
+	loader/files/reader/fat_size_reg[30]_syn_4.a[0]
+	cache_port/held_descriptor_reg[167]_syn_8.b[0]
+	cache_port/held_descriptor_reg[167]_syn_6.b[0]
+	cache_port/held_descriptor_reg[167]_syn_7.b[0]
+	cache_port/held_descriptor_reg[167]_syn_8.a[0]
+	cache_port/held_descriptor_reg[167]_syn_6.a[0]
+	cache_port/held_descriptor_reg[167]_syn_7.a[0]
+	cache_port/held_descriptor_reg[167]_syn_8.d[0]
+	cache_port/held_descriptor_reg[167]_syn_6.d[0]
+	cache_port/held_descriptor_reg[167]_syn_7.d[0]
+	cache_port/held_descriptor_reg[167]_syn_8.c[0]
+	cache_port/held_descriptor_reg[167]_syn_6.c[0]
+	cache_port/held_descriptor_reg[167]_syn_7.c[0]
+	cache_port/mux18_syn_467.a[1]
+	cache_port/mux18_syn_423.a[1]
+	loader/files/mem_data_b1[14]_syn_6.d[0]
+	loader/files/g_producer/gif/lzw/sel12_syn_820.d[0]
+	loader/files/g_producer/gif/lzw/sel12_syn_818.d[0]
+	loader/files/g_producer/gif/local_palette_n_syn_4.d[0]
+	loader/files/reader/scratch_reg[185]_syn_19.d[0]
+	loader/files/v_producer/audio_crc_reg[8]_syn_4.d[0]
+	loader/files/reader/state_b[4]_syn_338.d[1]
+	file_fifo/di[28]_syn_26.d[0]
+	loader/files/v_producer/audio_bytes_reg[21]_syn_4.d[0]
+	loader/files/g_producer/gif/frame_disposal_reg[1]_syn_4.d[0]
+	loader/files/g_producer/ops/scalar/mux60_syn_2015.d[0]
+	loader/files/g_producer/grgb[6]_syn_4.d[0]
+	loader/files/reader/state_b[4]_syn_326.d[0]
+	loader/files/v_producer/video/packed_word_reg[20]_syn_4.d[0]
+	cache_port/mux18_syn_421.a[1]
+	cache_port/mux18_syn_518.d[0]
+	queue/dispatch/stream_descriptor[5]_syn_6.d[0]
+	loader/backend/count_b1[3]_syn_29.d[1]
+	loader/backend/count_b1[3]_syn_31.d[1]
+	loader/backend/count_b1[3]_syn_29.d[0]
+	loader/backend/controller/command/failed_reg_syn_9.b[1]
+	loader/backend/controller/command/error_code_reg[1]_syn_404.mi[0]
+	loader/backend/controller/command/error_code_reg[1]_syn_488.mi[0]
+	loader/backend/controller/command/state_reg[4]_syn_16.mi[0]
+	loader/backend/controller/command/error_code_reg[1]_syn_624.mi[0]
+	loader/backend/controller/command/error_code_reg[1]_syn_625.mi[0]
+	loader/backend/controller/command/error_code_reg[1]_syn_626.mi[0]
+	loader/backend/controller/command/error_code_reg[1]_syn_627.mi[0]
+	loader/backend/controller/command/state_reg[4]_syn_20.mi[0]
+	loader/backend/controller/command/state_reg[4]_syn_21.mi[0]
+	loader/backend/controller/command/error_code_reg[1]_syn_404.d[0]
+	loader/backend/controller/command/state_reg[4]_syn_16.d[0]
+	loader/backend/controller/command/error_code_reg[1]_syn_548.d[0]
+	loader/backend/controller/command/mux172_syn_465.d[1]
+	loader/backend/controller/command/state_reg[4]_syn_16.d[1]
+	loader/backend/controller/command/state_reg[4]_syn_20.d[1]
+	loader/backend/controller/command/state_reg[4]_syn_20.d[0]
+	loader/backend/controller/command/state_reg[4]_syn_21.d[1]
+	loader/backend/controller/command/state_reg[4]_syn_21.d[0]
+	loader/backend/controller/command/failed_reg_syn_9.d[1]
+	loader/backend/controller/command/failed_reg_syn_9.c[1]
+	loader/backend/controller/command/state_reg[4]_syn_16.c[0]
+	loader/backend/controller/command/state_reg[4]_syn_16.c[1]
+	loader/backend/controller/command/error_code_reg[1]_syn_404.c[0]
+	loader/backend/controller/command/error_code_reg[1]_syn_548.c[0]
+	loader/backend/controller/command/mux172_syn_465.c[1]
+	loader/backend/controller/command/state_reg[4]_syn_20.c[1]
+	loader/backend/controller/command/state_reg[4]_syn_20.c[0]
+	loader/backend/controller/command/state_reg[4]_syn_21.c[1]
+	loader/backend/controller/command/state_reg[4]_syn_21.c[0]
+	loader/backend/controller/command/error_code_reg[1]_syn_624.c[1]
+	loader/backend/controller/command/error_code_reg[1]_syn_625.c[1]
+	loader/backend/controller/command/error_code_reg[1]_syn_626.c[1]
+	loader/backend/controller/command/error_code_reg[1]_syn_627.c[1]
+	loader/backend/controller/command/error_code_reg[1]_syn_404.b[0]
+	loader/backend/controller/command/state_reg[4]_syn_16.b[0]
+	loader/backend/controller/command/error_code_reg[1]_syn_548.b[0]
+	loader/backend/controller/command/mux172_syn_465.b[1]
+	loader/backend/controller/command/state_reg[4]_syn_16.b[1]
+	loader/backend/controller/command/state_reg[4]_syn_20.b[1]
+	loader/backend/controller/command/state_reg[4]_syn_20.b[0]
+	loader/backend/controller/command/state_reg[4]_syn_21.b[1]
+	loader/backend/controller/command/state_reg[4]_syn_21.b[0]
+	loader/backend/controller/status_rx/state_reg[2]_syn_15.a[0]
+	loader/backend/controller/status_rx/state_reg[2]_syn_15.d[0]
+	loader/backend/controller/status_rx/state_reg[2]_syn_15.c[0]
+	loader/backend/controller/status_rx/state_reg[2]_syn_15.c[1]
+	loader/backend/controller/status_rx/state_reg[2]_syn_15.b[0]
+	cache_port/mux18_syn_479.c[1]
+	cache_port/mux18_syn_479.d[1]
+	cache_port/mux18_syn_467.b[1]
+	cache_port/mux18_syn_423.b[1]
+	queue/dispatch/stream_descriptor[5]_syn_6.b[0]
+	loader/files/mem_data_b1[14]_syn_6.b[0]
+	loader/files/g_producer/gif/lzw/sel12_syn_820.b[0]
+	loader/files/g_producer/gif/lzw/sel12_syn_818.b[0]
+	loader/files/g_producer/gif/local_palette_n_syn_4.b[0]
+	loader/files/reader/scratch_reg[185]_syn_19.b[0]
+	loader/files/v_producer/audio_crc_reg[8]_syn_4.b[0]
+	loader/files/reader/state_b[4]_syn_338.b[1]
+	file_fifo/di[28]_syn_26.b[0]
+	loader/files/v_producer/audio_bytes_reg[21]_syn_4.b[0]
+	loader/files/g_producer/gif/frame_disposal_reg[1]_syn_4.b[0]
+	loader/files/g_producer/ops/scalar/mux60_syn_2015.b[0]
+	loader/files/g_producer/grgb[6]_syn_4.b[0]
+	loader/files/reader/state_b[4]_syn_326.b[0]
+	loader/files/v_producer/video/packed_word_reg[20]_syn_4.b[0]
+	cache_port/mux18_syn_421.b[1]
+	cache_port/mux18_syn_518.b[0]
+	loader/files/g_producer/gif/gce_delay_reg[14]_syn_4.c[0]
+	loader/files/g_producer/gif/gce_delay_reg[14]_syn_4.b[0]
+	loader/files/g_producer/ramread0_syn_127.a[1]
+	loader/files/g_producer/ops/ramread0_syn_112.c[1]
+	loader/files/g_producer/ops/ramread0_syn_97.c[0]
+	loader/files/g_producer/ops/ramread0_syn_97.c[1]
+	loader/files/g_producer/ops/ramread0_syn_98.c[0]
+	loader/files/g_producer/ops/ramread0_syn_98.c[1]
+	loader/files/g_producer/ops/ramread0_syn_111.c[0]
+	loader/files/g_producer/ops/ramread0_syn_111.c[1]
+	loader/files/g_producer/ops/ramread0_syn_112.c[0]
+	loader/files/g_producer/ops/ramread0_syn_13.c[0]
+	loader/files/g_producer/ops/ramread0_syn_13.c[1]
+	loader/files/g_producer/ops/ramread0_syn_14.c[0]
+	loader/files/g_producer/ops/ramread0_syn_14.c[1]
+	loader/files/g_producer/ops/ramread0_syn_27.c[0]
+	loader/files/g_producer/ops/ramread0_syn_27.c[1]
+	loader/files/g_producer/ops/ramread0_syn_28.c[0]
+	loader/files/g_producer/ops/ramread0_syn_28.c[1]
+	loader/files/g_producer/ops/ramread0_syn_41.c[0]
+	loader/files/g_producer/ops/ramread0_syn_41.c[1]
+	loader/files/g_producer/ops/ramread0_syn_42.c[0]
+	loader/files/g_producer/ops/ramread0_syn_42.c[1]
+	loader/files/g_producer/ops/ramread0_syn_55.c[0]
+	loader/files/g_producer/ops/ramread0_syn_55.c[1]
+	loader/files/g_producer/ops/ramread0_syn_56.c[0]
+	loader/files/g_producer/ops/ramread0_syn_56.c[1]
+	loader/files/g_producer/ops/ramread0_syn_69.c[0]
+	loader/files/g_producer/ops/ramread0_syn_69.c[1]
+	loader/files/g_producer/ops/ramread0_syn_70.c[0]
+	loader/files/g_producer/ops/ramread0_syn_70.c[1]
+	loader/files/g_producer/ops/ramread0_syn_83.c[0]
+	loader/files/g_producer/ops/ramread0_syn_83.c[1]
+	loader/files/g_producer/ops/ramread0_syn_84.c[0]
+	loader/files/g_producer/ops/ramread0_syn_84.c[1]
+	loader/files/g_producer/ops/ramread0_syn_112.b[1]
+	loader/files/g_producer/ops/ramread0_syn_97.b[0]
+	loader/files/g_producer/ops/ramread0_syn_97.b[1]
+	loader/files/g_producer/ops/ramread0_syn_98.b[0]
+	loader/files/g_producer/ops/ramread0_syn_98.b[1]
+	loader/files/g_producer/ops/ramread0_syn_111.b[0]
+	loader/files/g_producer/ops/ramread0_syn_111.b[1]
+	loader/files/g_producer/ops/ramread0_syn_112.b[0]
+	loader/files/g_producer/ops/ramread0_syn_13.b[0]
+	loader/files/g_producer/ops/ramread0_syn_13.b[1]
+	loader/files/g_producer/ops/ramread0_syn_14.b[0]
+	loader/files/g_producer/ops/ramread0_syn_14.b[1]
+	loader/files/g_producer/ops/ramread0_syn_27.b[0]
+	loader/files/g_producer/ops/ramread0_syn_27.b[1]
+	loader/files/g_producer/ops/ramread0_syn_28.b[0]
+	loader/files/g_producer/ops/ramread0_syn_28.b[1]
+	loader/files/g_producer/ops/ramread0_syn_41.b[0]
+	loader/files/g_producer/ops/ramread0_syn_41.b[1]
+	loader/files/g_producer/ops/ramread0_syn_42.b[0]
+	loader/files/g_producer/ops/ramread0_syn_42.b[1]
+	loader/files/g_producer/ops/ramread0_syn_55.b[0]
+	loader/files/g_producer/ops/ramread0_syn_55.b[1]
+	loader/files/g_producer/ops/ramread0_syn_56.b[0]
+	loader/files/g_producer/ops/ramread0_syn_56.b[1]
+	loader/files/g_producer/ops/ramread0_syn_69.b[0]
+	loader/files/g_producer/ops/ramread0_syn_69.b[1]
+	loader/files/g_producer/ops/ramread0_syn_70.b[0]
+	loader/files/g_producer/ops/ramread0_syn_70.b[1]
+	loader/files/g_producer/ops/ramread0_syn_83.b[0]
+	loader/files/g_producer/ops/ramread0_syn_83.b[1]
+	loader/files/g_producer/ops/ramread0_syn_84.b[0]
+	loader/files/g_producer/ops/ramread0_syn_84.b[1]
+	loader/files/g_producer/ops/ramread0_syn_112.a[1]
+	loader/files/g_producer/ops/ramread0_syn_97.a[0]
+	loader/files/g_producer/ops/ramread0_syn_97.a[1]
+	loader/files/g_producer/ops/ramread0_syn_98.a[0]
+	loader/files/g_producer/ops/ramread0_syn_98.a[1]
+	loader/files/g_producer/ops/ramread0_syn_111.a[0]
+	loader/files/g_producer/ops/ramread0_syn_111.a[1]
+	loader/files/g_producer/ops/ramread0_syn_112.a[0]
+	loader/files/g_producer/ops/ramread0_syn_13.a[0]
+	loader/files/g_producer/ops/ramread0_syn_13.a[1]
+	loader/files/g_producer/ops/ramread0_syn_14.a[0]
+	loader/files/g_producer/ops/ramread0_syn_14.a[1]
+	loader/files/g_producer/ops/ramread0_syn_27.a[0]
+	loader/files/g_producer/ops/ramread0_syn_27.a[1]
+	loader/files/g_producer/ops/ramread0_syn_28.a[0]
+	loader/files/g_producer/ops/ramread0_syn_28.a[1]
+	loader/files/g_producer/ops/ramread0_syn_41.a[0]
+	loader/files/g_producer/ops/ramread0_syn_41.a[1]
+	loader/files/g_producer/ops/ramread0_syn_42.a[0]
+	loader/files/g_producer/ops/ramread0_syn_42.a[1]
+	loader/files/g_producer/ops/ramread0_syn_55.a[0]
+	loader/files/g_producer/ops/ramread0_syn_55.a[1]
+	loader/files/g_producer/ops/ramread0_syn_56.a[0]
+	loader/files/g_producer/ops/ramread0_syn_56.a[1]
+	loader/files/g_producer/ops/ramread0_syn_69.a[0]
+	loader/files/g_producer/ops/ramread0_syn_69.a[1]
+	loader/files/g_producer/ops/ramread0_syn_70.a[0]
+	loader/files/g_producer/ops/ramread0_syn_70.a[1]
+	loader/files/g_producer/ops/ramread0_syn_83.a[0]
+	loader/files/g_producer/ops/ramread0_syn_83.a[1]
+	loader/files/g_producer/ops/ramread0_syn_84.a[0]
+	loader/files/g_producer/ops/ramread0_syn_84.a[1]
+	loader/files/reader/fat_size_reg[30]_syn_4.b[0]
+	loader/files/reader/fat_size_reg[30]_syn_4.d[0]
+	loader/files/reader/read_return_reg[3]_syn_84.mi[0]
+	loader/files/reader/state_b[4]_syn_318.mi[0]
+	loader/files/reader/state_b[4]_syn_434.d[0]
+	loader/files/reader/state_b[4]_syn_436.d[0]
+	loader/files/v_producer/video/record_header_reg[123]_syn_5.c[1]
+	cache_port/mux18_syn_421.d[1]
+	cache_port/mux18_syn_467.d[1]
+	cache_port/mux18_syn_423.d[1]
+	loader/files/reader/state_b[4]_syn_434.c[0]
+	loader/files/reader/state_b[4]_syn_436.c[0]
+	loader/files/v_producer/video/record_header_reg[123]_syn_5.d[1]
+	loader/files/v_producer/video/header_reg[127]_syn_4.d[1]
+	loader/files/v_producer/video/header_reg[127]_syn_4.c[1]
+	loader/files/v_producer/video/header_reg[127]_syn_4.b[1]
+	loader/files/stop_feed_reg_syn_381.c[0]
+	loader/files/v_producer/video/packed_word_reg[12]_syn_4.c[0]
+	loader/files/v_producer/video/record_header_reg[123]_syn_5.mi[1]
+	loader/files/v_producer/video/record_header_reg[123]_syn_5.mi[0]
+	loader/files/stop_feed_reg_syn_381.b[0]
+	loader/files/v_producer/video/packed_word_reg[12]_syn_4.b[0]
+	loader/files/v_producer/video/record_header_reg[123]_syn_5.b[1]
+	loader/files/stop_feed_reg_syn_381.d[0]
+	loader/files/v_producer/video/packed_word_reg[12]_syn_4.d[0]
+	loader/files/v_producer/video/packed_word_reg[12]_syn_4.a[0]
+	loader/files/stop_feed_reg_syn_381.a[0]
+	cache_port/held_descriptor_reg[167]_syn_8.mi[0]
+	cache_port/held_descriptor_reg[167]_syn_6.mi[0]
+	cache_port/held_descriptor_reg[167]_syn_7.mi[0]
+	cache_port/held_descriptor_reg[167]_syn_8.mi[1]
+	cache_port/held_descriptor_reg[167]_syn_6.mi[1]
+	cache_port/held_descriptor_reg[167]_syn_7.mi[1]
+	queue/dynamic_pool/ramread0_syn_524.b[0]
+	queue/dynamic_pool/ramread0_syn_524.b[1]
+	queue/dispatch/stream_descriptor[5]_syn_7.b[1]
+	queue/dispatch/stream_descriptor[5]_syn_8.b[1]
+	queue/dispatch/stream_descriptor[5]_syn_8.a[1]
+	queue/dispatch/stream_descriptor[5]_syn_7.a[1]
+	queue/dynamic_pool/ramread0_syn_524.a[1]
+	queue/dynamic_pool/ramread0_syn_524.a[0]
+	cache_port/held_descriptor_reg[167]_syn_4.d[1]
+	queue/dynamic_pool/token_reg[71]_syn_4.d[1]
+	cache_port/held_descriptor_reg[186]_syn_4.d[0]
+	cache_port/held_descriptor_reg[186]_syn_4.d[1]
+	cache_port/held_descriptor_reg[167]_syn_4.c[1]
+	queue/dynamic_pool/token_reg[71]_syn_4.c[1]
+	cache_port/held_descriptor_reg[186]_syn_4.c[0]
+	cache_port/held_descriptor_reg[186]_syn_4.c[1]
+	cache_port/held_descriptor_reg[167]_syn_4.b[1]
+	queue/dynamic_pool/token_reg[71]_syn_4.b[1]
+	cache_port/held_descriptor_reg[186]_syn_4.b[0]
+	cache_port/held_descriptor_reg[186]_syn_4.b[1]
+	queue/dispatch/stream_descriptor[5]_syn_7.d[1]
+	queue/dispatch/stream_descriptor[5]_syn_8.d[1]
+	queue/dispatch/stream_descriptor[5]_syn_7.c[1]
+	queue/dispatch/stream_descriptor[5]_syn_8.c[1]
+	loader/files/g_producer/gif/lzw/sel12_syn_818.c[0]
+	loader/files/g_producer/gif/lzw/sel12_syn_820.c[0]
+	loader/files/v_producer/audio_crc_reg[8]_syn_4.c[0]
+	loader/files/mem_data_b1[14]_syn_6.c[0]
+	loader/files/reader/state_b[4]_syn_338.c[1]
+	loader/files/g_producer/grgb[6]_syn_4.c[0]
+	loader/files/reader/state_b[4]_syn_326.c[0]
+	loader/files/v_producer/video/packed_word_reg[20]_syn_4.c[0]
+	queue/dispatch/stream_descriptor[5]_syn_6.c[0]
+	cache_port/mux18_syn_518.c[0]
+	file_fifo/di[28]_syn_26.c[0]
+	cache_port/mux18_syn_467.c[1]
+	cache_port/mux18_syn_421.c[1]
+	loader/files/g_producer/ops/scalar/mux60_syn_2015.c[0]
+	loader/files/v_producer/audio_bytes_reg[21]_syn_4.c[0]
+	loader/files/g_producer/gif/local_palette_n_syn_4.c[0]
+	loader/files/reader/scratch_reg[185]_syn_19.c[0]
+	loader/files/g_producer/gif/frame_disposal_reg[1]_syn_4.c[0]
+	cache_port/mux18_syn_423.c[1]
+	sender/phase_reg[8]_syn_40.mi[0]
+	loader/backend/count_b1[3]_syn_29.c[1]
+	loader/backend/count_b1[3]_syn_31.c[1]
+	loader/backend/count_b1[3]_syn_29.c[0]
+	loader/backend/controller/command/failed_reg_syn_9.a[1]
+	loader/backend/controller/command/error_code_reg[1]_syn_624.b[1]
+	loader/backend/controller/command/error_code_reg[1]_syn_625.b[1]
+	loader/backend/controller/command/error_code_reg[1]_syn_626.b[1]
+	loader/backend/controller/command/error_code_reg[1]_syn_627.b[1]
+	loader/backend/controller/command/error_code_reg[1]_syn_624.d[1]
+	loader/backend/controller/command/error_code_reg[1]_syn_625.d[1]
+	loader/backend/controller/command/error_code_reg[1]_syn_626.d[1]
+	loader/backend/controller/command/error_code_reg[1]_syn_627.d[1]
+	loader/backend/controller/status_rx/state_reg[2]_syn_15.d[1]
+	loader/files/g_producer/gif/gce_delay_reg[14]_syn_4.d[0]
+	cache_port/held_descriptor_reg[167]_syn_4.a[1]
+	queue/dynamic_pool/token_reg[71]_syn_4.a[1]
+	cache_port/held_descriptor_reg[186]_syn_4.a[1]
+	cache_port/held_descriptor_reg[186]_syn_4.a[0]
+
+DummyNode in Model: EG_PHY_MULT18
+	loader/files/reader/mult3_syn_84.b[17]
+	loader/files/reader/mult3_syn_84.b[16]
+	loader/files/reader/mult3_syn_84.b[15]
+	loader/files/reader/mult3_syn_84.b[14]
+	loader/files/reader/mult4_syn_84.b[17]
+	loader/files/reader/mult4_syn_84.b[16]
+	loader/files/reader/mult4_syn_84.b[15]
+	loader/files/reader/mult4_syn_84.b[14]
+	loader/files/reader/mult2_syn_84.b[17]
+	loader/files/reader/mult2_syn_84.b[16]
+	loader/files/reader/mult2_syn_84.b[15]
+	loader/files/reader/mult2_syn_84.b[14]
+	loader/files/reader/mult1_syn_84.b[14]
+	loader/files/reader/mult1_syn_84.b[15]
+	loader/files/reader/mult1_syn_84.b[16]
+	loader/files/reader/mult1_syn_84.b[17]
+
+DummyNode in Model: EG_PHY_PAD
+	led[7]_syn_666.opad
+	reserved[7]_syn_2.ipad
+	reserved[6]_syn_2.ipad
+	reserved[5]_syn_2.ipad
+	reserved[4]_syn_2.ipad
+	reserved[3]_syn_2.ipad
+	reserved[2]_syn_2.ipad
+	reserved[1]_syn_2.ipad
+	reserved[0]_syn_2.ipad
+	link_data[0]_syn_2.ce
+	link_data[7]_syn_2.ce
+	link_data[6]_syn_2.ce
+	link_data[5]_syn_2.ce
+	link_data[4]_syn_2.ce
+	link_data[3]_syn_2.ce
+	link_data[2]_syn_2.ce
+	link_data[1]_syn_2.ce
+	link_data[0]_syn_2.rst
+	link_valid_syn_2.rst
+	link_data[1]_syn_2.rst
+	link_data[2]_syn_2.rst
+	link_data[3]_syn_2.rst
+	link_data[4]_syn_2.rst
+	link_data[5]_syn_2.rst
+	link_data[6]_syn_2.rst
+	link_data[7]_syn_2.rst
+	memory/ram_syn_4.opad
+	memory/ram_syn_5.opad
+	memory/ram_syn_10.opad
+	memory/ram_syn_17.opad
+	memory/ram_syn_36.opad
+	memory/ram_syn_46.opad
+
+4. checking invalid constraints. (HIGH)
+---------------------------------------------
+There are 0 invalid constraints. (HIGH)
+
+
+5. checking PLL/buffer clocks. (HIGH)
+---------------------------------------------
+PLL/buffer inst: memory_pll/pll_inst
+{
+	There are 0 clock pins that have no clock constraints. (HIGH)
+
+
+	There are 0 clocks whose clock frequency do not match the PLL setting. (HIGH)
+
+
+}
+
+PLL/buffer inst: sd_pll/pll_inst
+{
+	There are 0 clock pins that have no clock constraints. (HIGH)
+
+
+	There are 0 clocks whose clock frequency do not match the PLL setting. (HIGH)
+
+
+}
+
+6. checking combinational loops. (HIGH)
+---------------------------------------------
+There are 0 combinational loops. (HIGH)
+
+
+7. checking soft fifo set_max_delay constraints. (HIGH)
+---------------------------------------------
+There are 0 max-delay datapath-only paths that are part of the provided async clock paths, whereas the timing between other registers is not relaxed or ignored. (HIGH)
+
+
+8. checking no path constraints. (MEDIUM)
+---------------------------------------------
+There is 1 constraint that has no timing paths. (MEDIUM)
+
+ set_false_path -hold -through [get_nets -hier {loader/files/reader/sd_sec_read_count*}] -to [get_clocks {sd_pll/pll_inst.clkc[0]}]
+
+9. checking path exception constraints shadowed/ignored by other constraints. (MEDIUM)
+---------------------------------------------
+
+MCP/SMD Summary
+--------------------
+
+		Max Check
+		--------------------
+		     Total    Dominated     Shadowed      Ignored   Constraint
+		        10           10            0            0   set_multicycle_path 2 -setup -from [get_ports {sd_cmd sd_dat[*]}] -to [get_clocks {sd_pll/pll_inst.clkc[2]}]
+
+		Min Check
+		--------------------
+		     Total    Dominated     Shadowed      Ignored   Constraint
+		         4            4            0            0   set_multicycle_path 1 -hold -start -from [get_clocks {sd_pll/pll_inst.clkc[0]}] -to [get_ports {sd_cmd}]
+
+10. checking no input delay (MEDIUM)
+--------------------------
+There are 11 input ports that with no input delay specified. (MEDIUM)
+
+	command_in
+	credit_in
+	reserved[7]
+	reserved[6]
+	reserved[5]
+	reserved[4]
+	reserved[3]
+	reserved[2]
+	reserved[1]
+	reserved[0]
+	sw0
+
+11. checking no output delay (MEDIUM)
+--------------------------
+There are 8 output ports that with no output delay specified. (MEDIUM)
+
+	led[7]
+	led[6]
+	led[5]
+	led[4]
+	led[3]
+	led[2]
+	led[1]
+	led[0]
+
+12. checking partial input delay (MEDIUM)
+--------------------------
+There are 5 input ports with partial input delay specified. (MEDIUM)
+
+	sd_cmd
+	sd_dat[3]
+	sd_dat[2]
+	sd_dat[1]
+	sd_dat[0]
+
+13. checking partial output delay (MEDIUM)
+--------------------------
+There are 0 output ports with partial output delay specified. (MEDIUM)
+
+
+14. checking abnormal set_input_delay constraints. (MEDIUM)
+---------------------------------------------
+There is 1 abnormal set_input_delay constraint. (MEDIUM)
+
+	 set_input_delay -clock sd_sck_pad -clock_fall -max 15 [get_ports {sd_cmd sd_dat[*]}]
+ set_input_delay -clock sd_sck_pad -clock_fall -min 2.5 [get_ports {sd_cmd sd_dat[*]}]
+

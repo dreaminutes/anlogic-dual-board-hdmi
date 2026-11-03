@@ -1,0 +1,8 @@
+set_inst_assignment {memory/data_reg[16]} {LOCATION = x10y9z0;}
+set_inst_assignment {memory/data_reg[17]} {LOCATION = x10y9z2;}
+set_inst_assignment {memory/data_reg[19]} {LOCATION = x10y10z2;}
+set_inst_assignment {memory/data_reg[21]} {LOCATION = x10y10z0;}
+set_inst_assignment {memory/data_reg[22]} {LOCATION = x11y10z0;}
+set_inst_assignment {memory/data_reg[23]} {LOCATION = x11y10z2;}
+set_inst_assignment {memory/data_reg[6]} {LOCATION = x12y50z0;}
+set_inst_assignment {memory/data_reg[7]} {LOCATION = x14y50z0;}

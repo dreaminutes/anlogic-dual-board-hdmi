@@ -1,0 +1,440 @@
+Table of Contents
+-----------------
+1. checking no clock(0) (HIGH)
+2. checking clock definition(0) (HIGH)
+3. checking dummy node(5) (HIGH)
+4. checking invalid constraint(0) (HIGH)
+5. checking pll/clock buffer clock constraints(2) (HIGH)
+6. checking combinational loops(0) (HIGH)
+7. checking soft fifo timing exception constraints(0) (HIGH)
+8. checking no path constraints(1) (MEDIUM)
+9. checking shadowed/ignored timing exception constraints(0) (MEDIUM)
+10. checking no input delay(28) (MEDIUM)
+11. checking no output delay(16) (MEDIUM)
+12. checking partial input delay(0) (MEDIUM)
+13. checking partial output delay(0) (MEDIUM)
+14. checking abnormal input delay(0) (MEDIUM)
+
+
+1. checking nets with no clock driven. (HIGH)
+---------------------------------------------
+2. checking clock definition problems. (HIGH)
+---------------------------------------------
+2.1 There are 0 leaf clock pins driven by multiple clocks. (HIGH)
+
+
+2.2 There are 0 clocks created on internal clock network. (HIGH)
+
+
+2.3 There are 0 unexpandable clock sets. (HIGH)
+
+
+2.4 There are 0 local clocks. (HIGH)
+
+
+2.5 There are 0 generated clocks that are not connected to their master clocks. (HIGH)
+
+
+3. checking dummy nodes. (HIGH)
+---------------------------------------------
+There are 5 nodes are dangling. (HIGH)
+
+DummyNode in Model: EG_PHY_BRAM32K
+	panel/osd/neon/block_color_rom/rom.dob[9]
+	panel/osd/neon/block_color_extra_rom/rom.dob[9]
+	panel/osd/neon/gain_low_rom/rom.dob[9]
+	panel/osd/neon/particle_color_rom/rom.dob[9]
+	panel/osd/neon/panels/hi_ab/rom.dob[9]
+	panel/osd/neon/panels/lo_ab/rom.dob[9]
+	panel/osd/neon/panels/hi_cd/rom.dob[9]
+	panel/osd/neon/panels/lo_cd/rom.dob[9]
+
+DummyNode in Model: EG_PHY_LSLICE
+	core/receiver/engine/bitmap/crc_b[26]_syn_10.a[0]
+	core/receiver/engine/bitmap/crc_b[26]_syn_10.b[0]
+	core/memory/read_pipe_reg[0]_syn_5.c[1]
+	core/receiver/engine/guard/mux11_syn_68.d[1]
+	core/receiver/engine/guard/mux11_syn_88.d[1]
+	core/receiver/engine/guard/mux11_syn_70.d[1]
+	core/receiver/engine/guard/slot_metadata_reg[474]_syn_4.c[0]
+	core/receiver/engine/guard/slot_metadata_reg[474]_syn_4.d[0]
+	core/receiver/engine/blob_fifo/wg1_reg[10]_syn_4.c[0]
+	core/receiver/engine/guard/mux11_syn_76.c[1]
+	core/receiver/engine/guard/mux11_syn_66.c[1]
+	core/receiver/engine/guard/mux11_syn_80.c[1]
+	core/receiver/engine/blob_fifo/wg1_reg[10]_syn_4.b[0]
+	core/receiver/engine/guard/mux11_syn_76.b[1]
+	core/receiver/engine/guard/mux11_syn_66.b[1]
+	core/receiver/engine/guard/mux11_syn_80.b[1]
+	core/receiver/engine/guard/mux11_syn_72.d[1]
+	core/receiver/engine/guard/mux11_syn_74.d[1]
+	core/receiver/engine/bitmap/state_reg[7]_syn_11.mi[1]
+	core/receiver/engine/guard/pixels/quarantine_slots_reg[1]_syn_931.d[1]
+	core/receiver/engine/bitmap/bmp/decoder/decoder/mux39_syn_301.c[0]
+	core/receiver/engine/bitmap/bmp/decoder/scaler/bus_wdata_reg[13]_syn_4.c[0]
+	core/receiver/engine/guard/mux11_syn_86.mi[0]
+	core/receiver/engine/bitmap/bmp/decoder/decoder/offset_reg[20]_syn_4.c[0]
+	core/receiver/engine/bitmap/bmp/decoder/held_height_reg[9]_syn_4.c[1]
+	core/receiver/engine/guard/pixels/quarantine_slots_reg[1]_syn_931.c[1]
+	core/receiver/engine/bitmap/bmp/decoder/decoder/offset_reg[20]_syn_4.b[0]
+	core/receiver/engine/bitmap/bmp/decoder/held_height_reg[9]_syn_4.b[1]
+	core/receiver/engine/writer/rd_reg[2]_syn_13.mi[0]
+	core/receiver/engine/bitmap/bmp/state_reg[1]_syn_4.mi[0]
+	core/receiver/engine/bitmap/bmp/mi_reg[0]_syn_10.mi[0]
+	core/receiver/engine/bitmap/bmp/decoder/scaler/bus_wdata_reg[13]_syn_4.d[0]
+	core/receiver/engine/bitmap/bmp/decoder/decoder/mux39_syn_301.d[0]
+	core/receiver/engine/blob_fifo/rg1_reg[4]_syn_4.c[1]
+	core/receiver/engine/records/mux88_syn_1167.d[1]
+	core/receiver/engine/blob_fifo/rg1_reg[4]_syn_4.d[1]
+	core/receiver/engine/records/mux88_syn_1167.c[1]
+	core/receiver/engine/blob_fifo/rg1_reg[4]_syn_4.b[1]
+	core/receiver/engine/guard/slot_metadata_reg[192]_syn_4.a[1]
+	core/receiver/engine/guard/slot_metadata_reg[192]_syn_4.a[0]
+	core/receiver/engine/guard/slot_metadata_reg[192]_syn_4.b[1]
+	core/receiver/engine/guard/slot_metadata_reg[192]_syn_4.b[0]
+	core/receiver/engine/guard/slot_metadata_reg[192]_syn_4.c[1]
+	core/receiver/engine/guard/slot_metadata_reg[192]_syn_4.c[0]
+	core/receiver/engine/guard/slot_metadata_reg[192]_syn_4.d[1]
+	core/receiver/engine/guard/slot_metadata_reg[192]_syn_4.d[0]
+	core/receiver/engine/blob_fifo/wg1_reg[10]_syn_4.d[0]
+	core/receiver/engine/guard/mux11_syn_70.c[1]
+	core/receiver/engine/guard/mux11_syn_72.c[1]
+	core/receiver/engine/guard/mux11_syn_68.c[1]
+	core/receiver/engine/guard/mux11_syn_88.c[1]
+	core/receiver/engine/guard/mux11_syn_74.c[1]
+	core/receiver/engine/guard/mux11_syn_76.d[1]
+	core/receiver/engine/guard/mux11_syn_66.d[1]
+	core/receiver/engine/guard/mux11_syn_80.d[1]
+	core/transition_control/compositor/radius[8]_syn_4.mi[0]
+	core/transition_control/compositor/sub17_syn_135.mi[0]
+	core/receiver/engine/guard/pixels/display_slot_reg[0]_syn_29.mi[0]
+	core/transition_control/compositor/distance_a_b[11]_syn_6.mi[0]
+	core/receiver/engine/guard/pixels/display_slot_reg[0]_syn_29.mi[1]
+	core/receiver/engine/packet_rx/write_low_reg[12]_syn_4.c[0]
+	core/receiver/engine/packet_rx/write_low_reg[12]_syn_4.c[1]
+	core/receiver/engine/records/mux88_syn_1167.a[1]
+	core/receiver/engine/records/bytes_reg[104]_syn_4.d[0]
+	core/receiver/engine/records/mux88_syn_1171.d[0]
+	core/receiver/engine/slot_size2_reg[2]_syn_4.a[0]
+	core/receiver/engine/bitmap/bmp/decoder/held_offset_reg[24]_syn_4.a[0]
+	core/receiver/engine/slot_size2_reg[22]_syn_4.a[1]
+	core/receiver/engine/slot_size2_reg[22]_syn_4.a[0]
+	core/receiver/engine/slot_size1_reg[21]_syn_4.a[0]
+	core/receiver/engine/packet_rx/write_low_reg[12]_syn_4.d[0]
+	core/receiver/engine/packet_rx/write_low_reg[12]_syn_4.d[1]
+	core/receiver/engine/slot_size1_reg[18]_syn_4.d[0]
+	core/receiver/engine/records/bytes_reg[107]_syn_4.d[0]
+	core/receiver/engine/slot_size2_reg[2]_syn_4.e[0]
+	core/receiver/engine/bitmap/bmp/decoder/held_offset_reg[24]_syn_4.e[0]
+	core/receiver/engine/slot_size2_reg[22]_syn_4.e[1]
+	core/receiver/engine/slot_size2_reg[22]_syn_4.e[0]
+	core/receiver/engine/slot_size1_reg[21]_syn_4.e[0]
+	core/receiver/engine/slot_size1_reg[18]_syn_4.c[0]
+	core/receiver/engine/records/bytes_reg[107]_syn_4.c[0]
+	core/receiver/engine/slot_size1_reg[18]_syn_4.a[0]
+	core/receiver/engine/records/bytes_reg[107]_syn_4.a[0]
+	core/receiver/engine/slot_size1_reg[18]_syn_4.b[0]
+	core/receiver/engine/records/bytes_reg[107]_syn_4.b[0]
+	core/receiver/engine/records/mux88_syn_1171.c[0]
+	core/receiver/engine/records/bytes_reg[104]_syn_4.c[0]
+	core/receiver/engine/records/bytes_reg[104]_syn_4.b[0]
+	core/receiver/engine/records/mux88_syn_1171.b[0]
+	core/receiver/engine/slot_size2_reg[2]_syn_4.b[0]
+	core/receiver/engine/bitmap/bmp/decoder/held_offset_reg[24]_syn_4.b[0]
+	core/receiver/engine/slot_size2_reg[22]_syn_4.b[1]
+	core/receiver/engine/slot_size2_reg[22]_syn_4.b[0]
+	core/receiver/engine/slot_size1_reg[21]_syn_4.b[0]
+	core/receiver/engine/slot_size2_reg[2]_syn_4.d[0]
+	core/receiver/engine/bitmap/bmp/decoder/held_offset_reg[24]_syn_4.d[0]
+	core/receiver/engine/slot_size2_reg[22]_syn_4.d[1]
+	core/receiver/engine/slot_size2_reg[22]_syn_4.d[0]
+	core/receiver/engine/slot_size1_reg[21]_syn_4.d[0]
+	core/receiver/engine/slot_size2_reg[2]_syn_4.c[0]
+	core/receiver/engine/bitmap/bmp/decoder/held_offset_reg[24]_syn_4.c[0]
+	core/receiver/engine/slot_size2_reg[22]_syn_4.c[1]
+	core/receiver/engine/slot_size2_reg[22]_syn_4.c[0]
+	core/receiver/engine/slot_size1_reg[21]_syn_4.c[0]
+	core/receiver/engine/packet_rx/write_low_reg[12]_syn_4.a[0]
+	core/receiver/engine/packet_rx/write_low_reg[12]_syn_4.a[1]
+	core/receiver/engine/bitmap/bmp/decoder/scaler/pending_low_reg[10]_syn_4.d[0]
+	core/receiver/engine/bitmap/bmp/decoder/held_height_reg[9]_syn_4.d[0]
+	core/receiver/engine/bitmap/bmp/decoder/scaler/pending_low_reg[10]_syn_4.d[1]
+	core/receiver/engine/bitmap/bmp/decoder/scaler/clear_index_reg[9]_syn_4.d[1]
+	core/receiver/engine/bitmap/bmp/held_reg[68]_syn_4.d[0]
+	core/receiver/engine/bitmap/bmp/decoder/scaler/pending_low_reg[4]_syn_4.d[1]
+	core/receiver/engine/bitmap/bmp/decoder/scaler/state_reg[3]_syn_481.d[1]
+	core/receiver/engine/bitmap/bmp/decoder/scaler/state_reg[3]_syn_497.d[1]
+	core/receiver/engine/bitmap/bmp/decoder/scaler/state_reg[3]_syn_463.d[1]
+	core/receiver/engine/bitmap/bmp/decoder/scaler/state_reg[3]_syn_461.d[1]
+	core/receiver/engine/bitmap/bmp/decoder/scaler/state_reg[3]_syn_461.d[0]
+	core/receiver/engine/bitmap/bmp/decoder/decoder/offset_reg[2]_syn_4.d[0]
+	core/receiver/engine/bitmap/bmp/decoder/decoder/size_reg[2]_syn_4.d[0]
+	core/receiver/engine/records/pcm_hold_reg[9]_syn_4.d[0]
+	core/receiver/engine/bitmap/bmp/decoder/scaler/pending_low_reg[12]_syn_4.d[1]
+	core/receiver/engine/records/mux88_syn_1167.b[1]
+	core/transition_control/compositor/state_reg[1]_syn_13.mi[1]
+	core/transition_control/compositor/state_reg[1]_syn_11.mi[0]
+	panel/osd/neon/sub15_syn_101.e[0]
+	core/receiver/engine/bitmap/crc_b[26]_syn_10.c[0]
+	u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/sel4_syn_1700.mi[0]
+	panel/osd/visualizer/fft/new_height_reg[4]_syn_231.mi[0]
+	core/receiver/engine/records/pcm_hold_reg[9]_syn_4.c[0]
+	core/receiver/engine/bitmap/bmp/decoder/decoder/offset_reg[2]_syn_4.c[0]
+	core/receiver/engine/bitmap/bmp/decoder/scaler/state_reg[3]_syn_463.c[1]
+	core/receiver/engine/bitmap/bmp/decoder/scaler/state_reg[3]_syn_481.c[1]
+	core/receiver/engine/bitmap/bmp/decoder/scaler/pending_low_reg[10]_syn_4.c[0]
+	core/receiver/engine/bitmap/bmp/decoder/scaler/state_reg[3]_syn_461.c[1]
+	core/receiver/engine/bitmap/bmp/decoder/decoder/size_reg[2]_syn_4.c[0]
+	core/receiver/engine/bitmap/crc_b[26]_syn_10.d[0]
+	core/receiver/engine/bitmap/bmp/decoder/scaler/state_reg[3]_syn_497.c[1]
+	core/transition_control/compositor/virtual_y_b1[5]_syn_12.c[0]
+	core/receiver/engine/commands/dst_data_reg[119]_syn_4.c[0]
+	core/receiver/engine/bitmap/bmp/held_reg[68]_syn_4.c[0]
+	core/receiver/engine/bitmap/bmp/decoder/scaler/state_reg[3]_syn_461.c[0]
+	core/receiver/engine/bitmap/bmp/decoder/scaler/pending_low_reg[10]_syn_4.c[1]
+	core/receiver/engine/bitmap/bmp/decoder/scaler/clear_index_reg[9]_syn_4.c[1]
+	core/receiver/engine/guard/mux5_syn_409.c[1]
+	core/receiver/engine/bitmap/bmp/decoder/scaler/pending_low_reg[4]_syn_4.c[1]
+	core/receiver/engine/bitmap/bmp/decoder/held_height_reg[9]_syn_4.c[0]
+	core/receiver/engine/bitmap/bmp/decoder/scaler/pending_low_reg[12]_syn_4.c[1]
+	core/memory/read_pipe_reg[0]_syn_5.d[1]
+	core/receiver/engine/bitmap/bmp/failed_reg_syn_502.mi[0]
+	core/receiver/engine/bitmap/bmp/decoder/decoder/offset_reg[20]_syn_4.d[0]
+	core/receiver/engine/bitmap/bmp/decoder/held_height_reg[9]_syn_4.d[1]
+	core/receiver/engine/blob_fifo/di[13]_syn_17.mi[0]
+	core/receiver/engine/guard/mux5_syn_409.d[1]
+	core/transition_control/compositor/virtual_y_b1[5]_syn_12.d[0]
+	core/receiver/engine/commands/dst_data_reg[119]_syn_4.d[0]
+	core/receiver/engine/packet_rx/write_low_reg[12]_syn_4.b[0]
+	core/receiver/engine/packet_rx/write_low_reg[12]_syn_4.b[1]
+
+DummyNode in Model: EG_PHY_MSLICE
+	core/receiver/engine/blob_fifo/wg1_reg[8]_syn_4.d[0]
+	panel/osd/visualizer/ty_q_reg[3]_syn_4.c[0]
+	panel/osd/visualizer/ty_q_reg[3]_syn_4.d[0]
+	core/receiver/engine/guard/mux11_syn_84.d[1]
+	core/receiver/engine/blob_fifo/wg1_reg[3]_syn_4.d[0]
+	core/receiver/engine/guard/mux11_syn_78.d[1]
+	core/receiver/engine/bitmap/mux64_syn_2320.mi[0]
+	core/receiver/engine/bitmap/state_reg[7]_syn_14.d[1]
+	core/receiver/engine/bitmap/bmp/state_reg[2]_syn_14.mi[0]
+	core/receiver/engine/bitmap/bmp/decoder/decoder/state_reg[4]_syn_196.c[0]
+	core/receiver/engine/bitmap/state_reg[7]_syn_14.c[1]
+	core/receiver/engine/bitmap/bmp/decoder/decoder/state_reg[4]_syn_196.b[0]
+	core/receiver/engine/packet_rx/frame_id_reg[23]_syn_4.d[0]
+	core/receiver/engine/packet_rx/frame_id_reg[23]_syn_4.a[0]
+	core/receiver/engine/packet_rx/frame_id_reg[23]_syn_4.b[0]
+	core/receiver/engine/packet_rx/frame_id_reg[23]_syn_4.c[0]
+	core/receiver/engine/blob_fifo/wg1_reg[0]_syn_4.c[0]
+	core/receiver/engine/records/bytes_reg[100]_syn_4.d[0]
+	core/receiver/engine/records/bytes_reg[108]_syn_4.d[0]
+	core/receiver/engine/blob_fifo/wg1_reg[0]_syn_4.d[0]
+	core/receiver/engine/records/bytes_reg[100]_syn_4.c[0]
+	core/receiver/engine/records/bytes_reg[108]_syn_4.c[0]
+	core/receiver/engine/blob_fifo/wg1_reg[0]_syn_4.b[0]
+	core/receiver/engine/blob_fifo/wg1_reg[8]_syn_4.c[0]
+	core/receiver/engine/guard/mux11_syn_84.c[1]
+	core/receiver/engine/blob_fifo/wg1_reg[3]_syn_4.c[0]
+	core/receiver/engine/guard/mux11_syn_78.c[1]
+	core/receiver/engine/records/bytes_reg[100]_syn_4.a[0]
+	core/receiver/engine/records/bytes_reg[108]_syn_4.a[0]
+	core/receiver/engine/records/bytes_reg[110]_syn_4.d[0]
+	core/receiver/engine/rows/held0_reg[56]_syn_4.d[0]
+	core/receiver/engine/records/bytes_reg[110]_syn_4.c[0]
+	core/receiver/engine/rows/held0_reg[56]_syn_4.c[0]
+	core/receiver/engine/records/bytes_reg[110]_syn_4.a[0]
+	core/receiver/engine/rows/held0_reg[56]_syn_4.a[0]
+	core/receiver/engine/records/bytes_reg[110]_syn_4.b[0]
+	core/receiver/engine/rows/held0_reg[56]_syn_4.b[0]
+	core/receiver/engine/bitmap/bmp/decoder/scaler/state_reg[3]_syn_532.d[0]
+	core/receiver/engine/bitmap/bmp/failed_reg_syn_553.d[0]
+	core/receiver/engine/bitmap/bmp/decoder/scaler/state_reg[3]_syn_477.d[1]
+	core/receiver/engine/bitmap/bmp/decoder/scaler/small_shift_b6[0]_syn_17.d[0]
+	core/receiver/engine/records/pcm_hold_reg[12]_syn_4.d[0]
+	core/receiver/engine/records/bytes_reg[100]_syn_4.b[0]
+	core/receiver/engine/records/bytes_reg[108]_syn_4.b[0]
+	u_hdmi_1_4b_transmitter_core_wrapper/u0_reset_sync/O_sync_reset_reg_syn_51.mi[0]
+	panel/osd/visualizer/fft/new_height_reg[4]_syn_215.mi[0]
+	u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/u_audio_clock_regeneration_packet/O_BCH_block_0_reg[16]_syn_8.mi[0]
+	core/receiver/engine/records/pcm_hold_reg[12]_syn_4.c[0]
+	core/receiver/engine/bitmap/bmp/decoder/scaler/small_shift_b6[0]_syn_17.c[0]
+	core/receiver/engine/bitmap/bmp/decoder/scaler/state_reg[3]_syn_477.c[1]
+	core/receiver/engine/bitmap/bmp/decoder/scaler/state_reg[3]_syn_532.c[0]
+	core/receiver/engine/bitmap/bmp/failed_reg_syn_553.c[0]
+	core/receiver/engine/bitmap/mux73_syn_3435.mi[0]
+	core/receiver/engine/bitmap/bmp/decoder/decoder/state_reg[4]_syn_196.d[0]
+	core/receiver/engine/blob/mi_reg[1]_syn_19.mi[1]
+
+DummyNode in Model: EG_PHY_MULT18
+	core/receiver/engine/bitmap/bmp/decoder/scaler/mult5_syn_4.a[15]
+	core/receiver/engine/bitmap/bmp/decoder/scaler/mult5_syn_4.a[16]
+	core/receiver/engine/bitmap/bmp/decoder/scaler/mult5_syn_4.a[17]
+	core/transition_control/compositor/mult7_syn_4.a[12]
+	core/transition_control/compositor/mult7_syn_4.a[13]
+	core/transition_control/compositor/mult7_syn_4.a[14]
+	core/transition_control/compositor/mult7_syn_4.a[15]
+	core/transition_control/compositor/mult7_syn_4.a[16]
+	core/transition_control/compositor/mult7_syn_4.a[17]
+	core/transition_control/compositor/mult0_syn_4.a[13]
+	core/transition_control/compositor/mult0_syn_4.a[14]
+	core/transition_control/compositor/mult0_syn_4.a[15]
+	core/transition_control/compositor/mult0_syn_4.a[16]
+	core/transition_control/compositor/mult0_syn_4.a[17]
+	core/transition_control/compositor/mult10_syn_4.a[12]
+	core/transition_control/compositor/mult10_syn_4.a[13]
+	core/transition_control/compositor/mult10_syn_4.a[14]
+	core/transition_control/compositor/mult10_syn_4.a[15]
+	core/transition_control/compositor/mult10_syn_4.a[16]
+	core/transition_control/compositor/mult10_syn_4.a[17]
+	panel/osd/neon/panels/lane_a/mult0_syn_1.a[17]
+	panel/osd/neon/panels/lane_a/mult0_syn_1.b[17]
+	panel/osd/neon/panels/lane_b/mult0_syn_1.a[17]
+	panel/osd/neon/panels/lane_b/mult0_syn_1.b[17]
+	panel/osd/neon/panels/lane_c/mult0_syn_1.a[17]
+	panel/osd/neon/panels/lane_c/mult0_syn_1.b[17]
+	panel/osd/neon/panels/lane_d/mult0_syn_1.a[17]
+	panel/osd/neon/panels/lane_d/mult0_syn_1.b[17]
+
+DummyNode in Model: EG_PHY_PAD
+	reserved[7]_syn_2.ipad
+	reserved[6]_syn_2.ipad
+	reserved[5]_syn_2.ipad
+	reserved[4]_syn_2.ipad
+	reserved[3]_syn_2.ipad
+	reserved[2]_syn_2.ipad
+	reserved[1]_syn_2.ipad
+	reserved[0]_syn_2.ipad
+	sw1_syn_2.ipad
+	core/memory/ram_syn_4.opad
+	core/memory/ram_syn_5.opad
+	core/memory/ram_syn_10.opad
+	core/memory/ram_syn_17.opad
+	core/memory/ram_syn_36.opad
+	core/memory/ram_syn_46.opad
+
+4. checking invalid constraints. (HIGH)
+---------------------------------------------
+There are 0 invalid constraints. (HIGH)
+
+
+5. checking PLL/buffer clocks. (HIGH)
+---------------------------------------------
+PLL/buffer inst: memory_pll/pll_inst
+{
+	There are 0 clock pins that have no clock constraints. (HIGH)
+
+
+	There are 0 clocks whose clock frequency do not match the PLL setting. (HIGH)
+
+
+}
+
+PLL/buffer inst: vpll/pll_inst
+{
+	There are 0 clock pins that have no clock constraints. (HIGH)
+
+
+	There are 0 clocks whose clock frequency do not match the PLL setting. (HIGH)
+
+
+}
+
+6. checking combinational loops. (HIGH)
+---------------------------------------------
+There are 0 combinational loops. (HIGH)
+
+
+7. checking soft fifo set_max_delay constraints. (HIGH)
+---------------------------------------------
+There are 0 max-delay datapath-only paths that are part of the provided async clock paths, whereas the timing between other registers is not relaxed or ignored. (HIGH)
+
+
+8. checking no path constraints. (MEDIUM)
+---------------------------------------------
+There is 1 constraint that has no timing paths. (MEDIUM)
+
+ set_false_path -from [get_ports {sw1}]
+
+9. checking path exception constraints shadowed/ignored by other constraints. (MEDIUM)
+---------------------------------------------
+
+MCP/SMD Summary
+--------------------
+
+		Max Check
+		--------------------
+		     Total    Dominated     Shadowed      Ignored   Constraint
+
+		Min Check
+		--------------------
+		     Total    Dominated     Shadowed      Ignored   Constraint
+
+10. checking no input delay (MEDIUM)
+--------------------------
+There are 28 input ports that with no input delay specified. (MEDIUM)
+
+	col[3]
+	col[2]
+	col[1]
+	col[0]
+	forward_clk
+	link_data[7]
+	link_data[6]
+	link_data[5]
+	link_data[4]
+	link_data[3]
+	link_data[2]
+	link_data[1]
+	link_data[0]
+	link_valid
+	reserved[7]
+	reserved[6]
+	reserved[5]
+	reserved[4]
+	reserved[3]
+	reserved[2]
+	reserved[1]
+	reserved[0]
+	sw0
+	sw1
+	sw4
+	sw5
+	sw6
+	sw7
+
+11. checking no output delay (MEDIUM)
+--------------------------
+There are 16 output ports that with no output delay specified. (MEDIUM)
+
+	HDMI_CLK_P
+	HDMI_D0_P
+	HDMI_D1_P
+	HDMI_D2_P
+	led[7]
+	led[6]
+	led[5]
+	led[4]
+	led[3]
+	led[2]
+	led[1]
+	led[0]
+	row[3]
+	row[2]
+	row[1]
+	row[0]
+
+12. checking partial input delay (MEDIUM)
+--------------------------
+There are 0 input ports with partial input delay specified. (MEDIUM)
+
+
+13. checking partial output delay (MEDIUM)
+--------------------------
+There are 0 output ports with partial output delay specified. (MEDIUM)
+
+
+14. checking abnormal set_input_delay constraints. (MEDIUM)
+---------------------------------------------
+There are 0 abnormal set_input_delay constraints. (MEDIUM)
+
+

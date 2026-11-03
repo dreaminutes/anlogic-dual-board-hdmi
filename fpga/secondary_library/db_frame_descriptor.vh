@@ -1,0 +1,15 @@
+`ifndef DB_FRAME_DESCRIPTOR_VH
+`define DB_FRAME_DESCRIPTOR_VH
+// Internal memory-domain descriptor, not a new on-wire packet format.
+// {kind2,epoch32,asset32,frame32,pts90k32,duration90k32,base_word21,token32,slot2}
+`define DB_FRAME_DESCRIPTOR_WIDTH 217
+`define DB_FRAME_DESCRIPTOR_KIND 216:215
+`define DB_FRAME_DESCRIPTOR_EPOCH 214:183
+`define DB_FRAME_DESCRIPTOR_ASSET 182:151
+`define DB_FRAME_DESCRIPTOR_ID 150:119
+`define DB_FRAME_DESCRIPTOR_PTS 118:87
+`define DB_FRAME_DESCRIPTOR_DURATION 86:55
+`define DB_FRAME_DESCRIPTOR_BASE 54:34
+`define DB_FRAME_DESCRIPTOR_TOKEN 33:2
+`define DB_FRAME_DESCRIPTOR_SLOT 1:0
+`endif
